@@ -1,6 +1,5 @@
 import React from 'react';
 import Photos from './Photos';
-import PropTypes from 'prop-types';
 
 
 export default function Main() {
@@ -98,14 +97,9 @@ export default function Main() {
         }
     ];
 
-    Photos.propTypes = {
-        title: PropTypes.array
-    };
-
-
     return (
-        <div className='main'>
+        <>
             <Photos data={data} />
-        </div>
+        </>
     )
 }

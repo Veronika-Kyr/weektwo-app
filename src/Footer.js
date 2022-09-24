@@ -1,6 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 export default function Footer(props) {
+
+    // example of style using variable:
+
     const h2Style = {
         color: 'red',
         margin: 0,
@@ -12,3 +17,8 @@ export default function Footer(props) {
         </div>
     )
 }
+
+Footer.propTypes = {
+    title: PropTypes.string
+};
+
